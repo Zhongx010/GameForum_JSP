@@ -28,8 +28,8 @@
                 <c:if test="${param.error != null}">
                     <div class="alert alert-error">${param.error}</div>
                 </c:if>
-                
-                <form action="createPost" method="post">
+
+                <form action="${pageContext.request.contextPath}/createPost" method="post">
                     <div class="form-group">
                         <label for="title">标题:</label>
                         <input type="text" id="title" name="title" required>
